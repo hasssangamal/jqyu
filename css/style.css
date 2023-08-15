@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 10000px;
+    overflow-x: hidden;
+}
+.header{
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+   
+}
+.overlay{
+    background-color: rgba(214, 46, 51 , 0.6);
+  
+}
+.parent{
+    z-index:1;
+}
+
+.header .title{
+    font-size: 60px;
+    color: #fff;
+   
+
+}
+.content-header p{
+    color: #fff;
+}
+.bar{
+    position: relative;
+    top: 144px;
+    left: 2%;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+.p{
+    position:absolute;
+    left: 0;
+}
+.slde{
+  position: fixed;
+  top:0;
+  left: -100%;
+z-index: 4;
+width: 30%;
+height: 100vh;
+background-color: black;
+color: #fff;
+transition: all 0.5s;
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s;
+}
+a:hover{
+    color: tomato;
+}
+.fa-xmark{
+   margin-left: 80%;
+   margin-top: 20px;
+   cursor: pointer;
+}
+.w{
+    left: 0;
+}
+.we{
+   left: 30%;
+}
+@media(max-width:750px){
+    .slde{
+        width: 40%;
+    }
+    .we{
+        left: 40%;
+    }
+}
+.accordion-button::after{
+    width: 0px !important;
+}
+.accordion-button{
+    text-align: center;
+    display: inline-block;
+}
+.accordion-button{
+    background: darksalmon;
+    color: #fff;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color:#fff;
+    background-color: darksalmon;
+ 
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+
+    font-size: 35px;
+    font-weight: bold;
+}
+.accordion-flush .accordion-collapse{
+    background-color: aquamarine;
+}
+.counting{
+    margin-top: 60px;
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 330px;
+
+}
+.counting .overlay{
+    height: 330px;
+  
+}
+
+.row .col-md-2{
+    z-index: 1;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    padding: 70px;
+    font-size: 35px;
+}
+@media(max-width:773px){
+    .counting {
+        height: 100%;
+    }
+    .counting .overlay{
+        height:calc(100% + 57%);
+    }
+}
+.icons-re{
+    margin-top: 40px;
+}
+.icons-re i{
+
+width: 5%;
+height: 5%;
+padding: 6px;
+border: 1px solid black;
+margin-right: 10px;
+cursor: pointer;
+transition: all 0.5s;
+}
+.icons-re i:hover
+{
+    background-color: red;
+color: #fff;
+}
+@media(max-width:991px){
+    .parnt-re{
+        flex-direction: column;
+    }
+    .content-re , .contact-re{
+        width: 100% !important;
+    }
+}
+.btn-danger {
+    background-color: red !important;
+}
